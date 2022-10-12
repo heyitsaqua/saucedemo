@@ -34,7 +34,7 @@ public class BaseTest {
         initializeDriver("chrome");
         //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.get("http://automation.techleadacademy.io/#/home");
+        driver.get("https://www.saucedemo.com/");
         driver.get(ConfigReader.readProperty("url"));
 
         extentManager.createTestReport(method);
