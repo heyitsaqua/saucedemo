@@ -2,11 +2,17 @@ package tests;
 
 import base.BaseTest;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 
 public class LoginTest extends BaseTest {
     private LoginPage loginpage;
+
+    @BeforeMethod
+    public void setUp() {
+        loginpage = new LoginPage(driver);
+    }
 
     @Test(testName = "US 301 - Verify standard_user can login with right password")
     public void test01() {
