@@ -1,12 +1,11 @@
 package tests;
 
 import base.BaseTest;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 
-public class HomeTest extends BaseTest {
+public class LoginTest extends BaseTest {
     private HomePage homePage;
 
     @Test(testName = "US 301 - Verify standard_user can login with right password")
